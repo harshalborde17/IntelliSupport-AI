@@ -1,0 +1,18 @@
+# Environment variables
+.env
+.env.*
+
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# ChromaDB
+chroma_db/
+
+# Temporary files
+*.log
+temp/

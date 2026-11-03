@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+         project_by_harshyaa
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>
+            Customer Support ChatBot
+        </h1>
+
+        <p>
+            An Intelligent Customer Support Chatbot Using Retrieval-Augmented Generation (RAG)
+        </p>
+
+    </header>
+
+
+    <section class="upload-section">
+
+        <h2>
+            Upload Support Document
+        </h2>
+
+        <input
+            type="file"
+            id="pdfFile"
+            accept=".pdf"
+        >
+
+        <button onclick="uploadPDF()">
+            Upload PDF
+        </button>
+
+        <p id="uploadStatus"></p>
+
+    </section>
+
+
+    <section class="chat-section">
+
+        <div
+            id="chatBox"
+            class="chat-box"
+        >
+
+            <div class="bot-message">
+                Hello! Upload a support PDF and
+                ask me a question.
+            </div>
+
+        </div>
+
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="question"
+                placeholder="Ask a customer support question..."
+                onkeydown="handleKey(event)"
+            >
+
+            <button onclick="sendQuestion()">
+                Send
+            </button>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
